@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Collision System</title>
+    <meta name="author" content="Qi Zhang" />
+    <meta name="description" content="A simple collision system, which can be full screen" />
+    <meta name="resource-type" content="document" />
+
+    <link rel="stylesheet" type="text/css" href="collisionSystem.css" />
+    <style>
+        html, body {
+            overflow: hidden;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="800px" height="600px"></canvas>
+    <script type="text/javascript" src="collisionSystem.js"></script>
+    <script>
+        var canvas = document.getElementById("canvas");
+        collisionSystem.init(canvas, {
+            fullScreen: true,
+            ballCount: 10
+        });
+    </script>
+</body>
+</html>
